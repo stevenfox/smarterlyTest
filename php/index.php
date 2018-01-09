@@ -12,6 +12,7 @@ while($row = mysqli_fetch_array($result)) {
     $temp= $hav_result[i-1];
     $hav_result[i-1]= $hav_result[i];
     $hav_result[i]=temp;
+  }
     $output .= "<tr>";
       $output .= "<td>".$row['category']."</td>";
       $output .= "<td>".$row['type']."</td>";
