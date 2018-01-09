@@ -1,0 +1,22 @@
+
+body
+{
+    background-color: 000;
+}
+
+.pwait
+{
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    right: 50%;
+}
+.circle
+{
+    color: #fff;
+}
+#textp
+{
+    color: #fff;
+}
