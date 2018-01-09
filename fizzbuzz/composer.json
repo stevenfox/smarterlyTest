@@ -1,0 +1,23 @@
+{
+    "name": "stevenfox/composer-library-alghorithm",
+    "description": "a Fizzbuzz alghorithm for testing purposes",
+    "keywords": ["composer", "package", "Fizzbuzz"],
+    "license": "DBAD",
+    "authors": [
+        {
+            "name": "stefanos",
+        }
+    ],
+    "type": "project",
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "stevenfox\\fizzbuzz\\": "src/"
+        }
+    }
+}
