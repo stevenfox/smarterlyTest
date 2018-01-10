@@ -1,10 +1,10 @@
 <?php
-include 'config.php'
+include 'config.php';
 # Our Current Location
 $location = ['51.301819','-0.337613'];
 
-$result = $link->query("SELECT lat AND lng FROM boxes");
-$hav_result=[]
+$result = $link->query("SELECT  *  FROM `boxes` ");
+$hav_result=[];
 $output = "<table>";
 while($row = mysqli_fetch_array($result)) {
   $hav_result[i] = haversineF(location[0], location[1], .row['lat'], .row['lng'], $earthRadius);
@@ -26,9 +26,7 @@ while($row = mysqli_fetch_array($result)) {
 
 echo $output;
 
-
-function haversineF(
-  $latitudeFrom, $longitudeFrom, $latitudeTo, $longitudeTo, $earthRadius = 6371000)
+function haversineF($latitudeFrom, $longitudeFrom, $latitudeTo, $longitudeTo, $earthRadius = 6371000)
 {
   // convert from degrees to radians
   $latFrom = deg2rad($latitudeFrom);
